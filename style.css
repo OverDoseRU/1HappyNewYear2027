@@ -192,9 +192,10 @@ body.revealed .scene-bg {
 .parchment-stage {
     position: relative;
     z-index: 4;
-    height: 90vh;
-    max-height: 860px;
-    max-width: 92vw;
+    width: 78vw;
+    max-width: 340px;
+    height: 72vh;
+    max-height: 580px;
     aspect-ratio: 682 / 1024;
     display: flex;
     align-items: center;
