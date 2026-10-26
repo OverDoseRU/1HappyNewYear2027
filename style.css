@@ -378,3 +378,29 @@ body.revealed .parchment-stage {
         max-height: 86vh;
     }
 }
+
+.parchment-stage {
+    width: 86vw;
+    max-width: 380px;
+    height: 78vh;
+    max-height: 680px;
+}
+
+.parchment-safe-zone {
+    padding: 12% 13% 11%;
+}
+
+.script-header {
+    font-size: clamp(18px, 2.3vh, 23px);
+    margin-bottom: 4.5%;
+}
+
+.script-body {
+    font-size: clamp(15px, 1.95vh, 19.5px);
+    line-height: 1.5;
+}
+
+.script-footer {
+    font-size: clamp(16px, 2.1vh, 20.5px);
+    margin-top: 4%;
+}
