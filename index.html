@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>2027</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,12 +35,12 @@
         </div>
     </div>
 
-    <main class="scene">
+    <main class="scene" id="scene">
         <div class="scene-bg"></div>
         <div class="scene-mist"></div>
         <canvas id="snow-canvas"></canvas>
 
-        <section class="parchment-stage">
+        <section class="parchment-stage" id="parchment-stage">
             <div class="parchment-sheet">
                 <img src="paper.jpg" alt="" class="parchment-texture">
 
@@ -48,42 +48,6 @@
                     <header class="script-header" id="script-title"></header>
                     <div class="script-body" id="script-body"></div>
                     <footer class="script-footer" id="script-sign"></footer>
-
-                    <div id="fountain-pen" class="fountain-pen">
-                        <div class="pen-shadow"></div>
-                        <div class="pen-body" id="pen-body">
-                            <img src="pen.png" alt="" class="custom-pen-img" onload="this.parentElement.classList.add('has-custom-png')" onerror="this.remove()">
-                            <svg class="default-pen-svg" width="135" height="135" viewBox="0 0 140 140" fill="none">
-                                <defs>
-                                    <linearGradient id="nib-gold" x1="2" y1="138" x2="38" y2="102" gradientUnits="userSpaceOnUse">
-                                        <stop offset="0%" stop-color="#f7e3a1"/>
-                                        <stop offset="40%" stop-color="#cfa353"/>
-                                        <stop offset="75%" stop-color="#8c6222"/>
-                                        <stop offset="100%" stop-color="#e8c67a"/>
-                                    </linearGradient>
-                                    <linearGradient id="wood-holder" x1="30" y1="95" x2="135" y2="5" gradientUnits="userSpaceOnUse">
-                                        <stop offset="0%" stop-color="#3b1810"/>
-                                        <stop offset="35%" stop-color="#5c261a"/>
-                                        <stop offset="70%" stop-color="#290f0a"/>
-                                        <stop offset="100%" stop-color="#140704"/>
-                                    </linearGradient>
-                                    <linearGradient id="ferrule-metal" x1="28" y1="100" x2="46" y2="114" gradientUnits="userSpaceOnUse">
-                                        <stop offset="0%" stop-color="#7a6c5d"/>
-                                        <stop offset="50%" stop-color="#e3dcd2"/>
-                                        <stop offset="100%" stop-color="#383028"/>
-                                    </linearGradient>
-                                </defs>
-                                <path d="M2 138 L16 109 L24 105 L35 116 L31 124 L2 138 Z" fill="url(#nib-gold)"/>
-                                <path d="M2 138 L16 109 L20 120 L2 138 Z" fill="rgba(255, 255, 255, 0.24)"/>
-                                <path d="M2 138 L19.5 120.5" stroke="#24130b" stroke-width="1.1" stroke-linecap="round"/>
-                                <circle cx="20.2" cy="119.8" r="2" fill="#24130b"/>
-                                <path d="M23 105 L34 94 L46 106 L35 117 Z" fill="url(#ferrule-metal)"/>
-                                <path d="M25 103 L37 115" stroke="#1f1712" stroke-width="0.9"/>
-                                <path d="M34 94 C58 68, 96 28, 136 2 C138 2, 138 2, 138 4 C112 44, 72 82, 46 106 Z" fill="url(#wood-holder)"/>
-                                <path d="M37 96 C64 68, 100 32, 135 4" stroke="rgba(255, 230, 210, 0.16)" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
